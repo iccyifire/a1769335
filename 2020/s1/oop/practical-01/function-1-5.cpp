@@ -6,7 +6,7 @@ int count_even(int number)
 	return 0;
 	int result = 0;
 	for(int i=0; i<number; i++){
-		if(number%2 == 0)
+		if((number%2) == 0)
 		result++;
 		number = result;
 	}
