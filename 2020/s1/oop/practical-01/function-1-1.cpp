@@ -1,13 +1,13 @@
 #include <iostream>
-// function to ...
-int sum_array(int array[])
+using namespace std;
+int sum_array(int array[], int n)
 {
-int total = 0;
-    for (int i = 0; i < 5; i++) {
-        if (array[i] < 0) {
-            array[i] = 0 ;
-        }
-    }
-
-    return total;
+	if(n < 1)
+	return 0;
+	int result = 0;
+	for(int i=0; i<n; i++){
+		// adding one number at a time
+		result = result + array[i];
+	}
+	return result;
 }
