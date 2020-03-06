@@ -1,5 +1,9 @@
+#include <iostream>
+extern int sum_array(int[], int);
+
 int main() {
 	int a[5] = {2, 3, 4, 5, 2};
 	int n = 5;
-	cout << sum_array(a, n) << endl;
+	std::cout << sum_array(a, n) << std::endl;
+	return 0;
 }
